@@ -1,0 +1,35 @@
+MINDLY FIXED - QUICK START
+
+FRONTEND
+1. Open terminal in this folder.
+2. npm install
+3. npm run dev
+
+BACKEND
+1. Open a second terminal.
+2. cd backend
+3. Activate your existing venv, or create one:
+   python -m venv venv
+   .\venv\Scripts\Activate.ps1
+4. pip install -r requirements.txt
+5. python manage.py migrate
+6. python manage.py runserver
+
+LOCAL DREAM AI
+Open a THIRD terminal and start your llama-server on:
+http://127.0.0.1:8080
+
+The fixed AI connector first detects the model exposed by llama-server.
+If model discovery is unavailable, it falls back to the model name
+mindly-dream-ai.
+
+TEST DREAM
+Use the Dream Log and paste:
+"I was walking alone through a huge empty school at night. All the classrooms
+were dark except one at the end of the hallway. There was a bright red door,
+and I could hear someone calling my name from behind it. I opened the door and
+found a beautiful garden with flowers and a small lake. When I looked into the
+water, I saw myself as a child. Then the garden disappeared and I woke up."
+
+IMPORTANT
+Do NOT run two copies of the frontend/backend on the same ports.
